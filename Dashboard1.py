@@ -4,7 +4,10 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
+
+# ✅ Set the page config first!
 st.set_page_config(page_title="Smart Irrigation Dashboard", layout="wide")
+
 # Load the forecast results (ensure this file is generated from your model)
 df = pd.read_csv("3day_forecast_results.csv")
 df['timestamp'] = pd.to_datetime(df['timestamp'])
@@ -45,7 +48,6 @@ st.sidebar.image("https://cdn-icons-png.flaticon.com/512/3514/3514491.png", widt
 selected_lang = st.sidebar.selectbox("🌐 Language / भाषा / भाषा", list(LANGUAGES.keys()))
 labels = LANGUAGES[selected_lang]
 
-st.set_page_config(page_title="Smart Irrigation Dashboard", layout="wide")
 st.title(labels['title'])
 
 # GHI FORECAST PLOT
