@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
-
+st.set_page_config(page_title="Smart Irrigation Dashboard", layout="wide")
 # Load the forecast results (ensure this file is generated from your model)
 df = pd.read_csv("3day_forecast_results.csv")
 df['timestamp'] = pd.to_datetime(df['timestamp'])
