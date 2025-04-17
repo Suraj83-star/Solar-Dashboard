@@ -109,4 +109,4 @@ footer {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
 
-st.info("💡 Developed by Suraj Shah for rural solar irrigation planning – April 2025")
+st.info("Developed by Suraj Shah for rural solar irrigation planning – April 2025")
