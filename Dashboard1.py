@@ -82,7 +82,6 @@ st.dataframe(df[['timestamp', 'forecasted_ghi', 'alert_text']].rename(columns={
 
 # Summary Insights
 st.success(labels['best_time'])
-st.warning(labels['energy_saving'])
 
 # Key Metrics
 col1, col2, col3 = st.columns(3)
